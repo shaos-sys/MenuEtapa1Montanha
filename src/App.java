@@ -44,8 +44,14 @@
                    opcao = scan.nextInt();
                    break;
 
-          default:
-          
+          default:    
+             if (opcao >= 4) {
+
+                System.out.println("====== OPÇÃO INVÁLIDA ======");
+                System.out.print("Digite outra opção: ");
+                opcao = scan.nextInt();               
+             }   
+             
    } 
   }       scan.close();
           System.out.println("Encerrando...");
